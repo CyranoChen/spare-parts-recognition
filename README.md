@@ -71,17 +71,10 @@ CNN_SERVER_ENDPOINT: <server app address>/api
 From the **client** directory, using the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) push your app to the SAP BTP Cloud Foundry
 
 ```sh
-$ cf push
-or
-$ cf push --random-route
-–random-route will avoid name collisions with others that deploy this same app on SCP. You can also choose your own app name by changing the manifest.yml file.
+cf push
 ```
 
 Access the app from the URL route shown in the terminal
-
-## Demo app
-
-There is a sample implementation [running here](https://spare-parts-recognition.cfapps.eu10.hana.ondemand.com/). Be advised that the B1 System Backend is not running 24/7
 
 ## License
 
